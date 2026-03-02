@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook - Awais</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    background:#f0f2f5;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    height:60px;
+    background:#1877f2;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    position:sticky;
+    top:0;
+    color:white;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.search input{
+    width:300px;
+    padding:8px 15px;
+    border-radius:20px;
+    border:none;
+    outline:none;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.nav-right span{
+    cursor:pointer;
+    font-size:18px;
+}
+
+.profile{
+    background:white;
+    color:black;
+    padding:5px 12px;
+    border-radius:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.container{
+    display:flex;
+    padding:20px;
+}
+
+/* LEFT SIDEBAR */
+.left{
+    width:25%;
+}
+
+.left ul{
+    list-style:none;
+}
+
+.left ul li{
+    padding:12px;
+    margin-bottom:8px;
+    background:white;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.left ul li:hover{
+    background:#e4e6eb;
+}
+
+/* MIDDLE SECTION */
+.middle{
+    width:50%;
+    padding:0 20px;
+}
+
+.story-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.story{
+    flex:1;
+    height:150px;
+    background:#ddd;
+    border-radius:10px;
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+.story span{
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    color:white;
+    font-weight:bold;
+}
+
+.story img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.post-box{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.post-box input{
+    width:100%;
+    padding:10px;
+    border-radius:20px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+.post{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.post h4{
+    margin-bottom:5px;
+}
+
+.post p{
+    margin-bottom:10px;
+}
+
+.post img{
+    width:100%;
+    border-radius:10px;
+}
+
+.actions{
+    display:flex;
+    justify-content:space-around;
+    margin-top:10px;
+}
+
+.actions div{
+    cursor:pointer;
+    padding:8px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.actions div:hover{
+    background:#e4e6eb;
+}
+
+/* RIGHT SIDEBAR */
+.right{
+    width:25%;
+}
+
+.right h3{
+    margin-bottom:10px;
+}
+
+.contact{
+    background:white;
+    padding:10px;
+    border-radius:8px;
+    margin-bottom:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact:hover{
+    background:#e4e6eb;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .left,.right{
+        display:none;
+    }
+    .middle{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">facebook</div>
+    <div class="search">
+        <input type="text" placeholder="Search Facebook">
+    </div>
+    <div class="nav-right">
+        <span>🏠</span>
+        <span>🔔</span>
+        <span>💬</span>
+        <div class="profile">Awais</div>
+    </div>
+</div>
+
+<!-- MAIN SECTION -->
+<div class="container">
+
+    <!-- LEFT -->
+    <div class="left">
+        <ul>
+            <li>👤 Awais</li>
+            <li>👥 Friends</li>
+            <li>👪 Groups</li>
+            <li>🛒 Marketplace</li>
+            <li>📺 Watch</li>
+        </ul>
+    </div>
+
+    <!-- MIDDLE -->
+    <div class="middle">
+
+        <!-- Stories -->
+        <div class="story-box">
+            <div class="story">
+                <img src="https://picsum.photos/200/300?1">
+                <span>Awais</span>
+            </div>
+            <div class="story">
+                <img src="https://picsum.photos/200/300?2">
+                <span>Ali</span>
+            </div>
+            <div class="story">
+                <img src="https://picsum.photos/200/300?3">
+                <span>Ahmed</span>
+            </div>
+        </div>
+
+        <!-- Post Box -->
+        <div class="post-box">
+            <input type="text" placeholder="What's on your mind, Awais?">
+        </div>
+
+        <!-- Post -->
+        <div class="post">
+            <h4>Awais</h4>
+            <p>Professional Facebook UI design using HTML & CSS 🚀</p>
+            <img src="https://picsum.photos/600/300">
+            <div class="actions">
+                <div>👍 Like</div>
+                <div>💬 Comment</div>
+                <div>↗ Share</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+        <h3>Contacts</h3>
+        <div class="contact">Ali</div>
+        <div class="contact">Ahmed</div>
+        <div class="contact">Sara</div>
+        <div class="contact">Zain</div>
+    </div>
+
+</div>
+
+</body>
+</html>
